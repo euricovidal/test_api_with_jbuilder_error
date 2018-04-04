@@ -1,0 +1,15 @@
+Started GET "/users" for 127.0.0.1 at 2018-04-04 10:29:10 -0300
+Processing by UsersController#index as */*
+  Rendering users/index.json.jbuilder
+  Rendered users/index.json.jbuilder (313.8ms)
+Completed 500 Internal Server Error in 465ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `﻿json' for #<#<Class:0x007fdd69c55ff0>:0x007fdd69c47b30>
+Did you mean?  json
+               JSON):
+    1: ﻿json.anything '123'
+  
+app/views/users/index.json.jbuilder:1:in `_app_views_users_index_json_jbuilder__4576257933222361480_70294475936000'
+app/controllers/users_controller.rb:3:in `index'
